@@ -119,16 +119,25 @@ public class ParentFragment extends Fragment implements GoogleMap.OnMarkerClickL
     private int count = 0;
     @Override
     public boolean onMarkerClick(Marker marker) {
-        count++;
 
         ArrayList<String> datas = new ArrayList<>();
-        for(int i=0; i<count; i++)
-        datas.add(String.valueOf(i));
+
+        count++;
+
+        if(count > 5){
+            count = 0;
+            datas.clear();
+        }
+
+        else{
+            for(int i=0; i<count; i++)
+                datas.add(String.valueOf(i));
+        }
 
         Fragment fragment = com.example.user.googlemapexam.ListFragment.newInstance(datas);
         setChildFragment(fragment);
 
-        return false;
+        return true;
     }
 
     @Override

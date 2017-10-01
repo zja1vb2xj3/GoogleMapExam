@@ -52,7 +52,6 @@ public class ListFragment extends Fragment {
             listViewAdapter.addItem(datas.get(i));
         }
 
-
         listView.setAdapter(listViewAdapter);
 
         return rootView;
@@ -64,4 +63,6 @@ public class ListFragment extends Fragment {
 
 
     }
+
+
 }

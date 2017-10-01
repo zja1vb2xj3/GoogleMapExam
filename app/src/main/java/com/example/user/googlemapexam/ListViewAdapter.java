@@ -61,6 +61,7 @@ public class ListViewAdapter extends BaseAdapter {
         item.setItemText(data);
 
         listViewItems.add(item);
+
     }
 
     public void clearItem(){
