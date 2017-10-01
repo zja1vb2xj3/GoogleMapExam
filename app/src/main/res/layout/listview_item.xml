@@ -9,7 +9,7 @@
         android:id="@+id/list_textview"
         android:textAlignment="center"
         android:textSize="25dp"
-        android:background="@android:color/transparent"
+
         />
 
 </LinearLayout>
